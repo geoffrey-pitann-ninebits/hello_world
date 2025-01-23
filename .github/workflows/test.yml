@@ -9,6 +9,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Hello world
-        run: echo "Hello world"
+        run: |
+          echo "${{ secrets.TEST_SECRET }}"
+          echo "${{ variables.WEBSITE }}" 
       - name: list
         run: ls -all
