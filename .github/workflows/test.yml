@@ -11,6 +11,6 @@ jobs:
       - name: Hello world
         run: |
           echo "${{ secrets.TEST_SECRET }}"
-          echo "${{ variables.WEBSITE }}" 
+          echo "${{ vars.WEBSITE }}" 
       - name: list
         run: ls -all
